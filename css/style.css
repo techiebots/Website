@@ -147,6 +147,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: 'Flamenco', cursive;
 }
@@ -280,7 +281,7 @@ body {
 
 .paragraph {
   font-size: 2.2rem;
-  font-family:'Poppins', sans-serif ;
+  font-family: 'Poppins', sans-serif;
 }
 
 .paragraph:not(:last-child) {
@@ -492,7 +493,8 @@ body {
   position: absolute;
   z-index: 10;
   transition: all .2s;
-  outline-offset: 2rem;
+  border-radius: 10%;
+  transition: all ease-in-out .5s;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -505,10 +507,10 @@ body {
 }
 
 .composition__photo--p1 {
-  left: 4rem;
-  top: -2rem;
-  height: 250px;
-  width: 250px;
+  left: 10rem;
+  top: 2rem;
+  height: 200px;
+  width: 200px;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -543,8 +545,9 @@ body {
   left: 30%;
   top: 10rem;
   height: 250px;
-  width: 250px;
+  /* width: 250px; */
 }
+
 
 @media only screen and (max-width: 56.25em) {
   .composition__photo--p3 {
@@ -555,10 +558,11 @@ body {
 }
 
 .composition__photo:hover {
-  outline: 1.5rem solid #ff7730;
+  /* outline: 1.5rem solid #ff7730; */
   transform: scale(1.05) translateY(-0.5rem);
-  /* box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
+  backdrop-filter: blur(3px) brightness(80%);
 }
 
 .composition:hover .composition__photo:not(:hover) {
@@ -570,11 +574,11 @@ body {
   height: 360px;
   width: 290px;
   background: #fff;
-  transition: all 0.2s ease-in 0.1s;
   position: relative;
-  border: 2px 
-  ;
+  border: 2px;
   border-radius: 10px;
+  transition: all ease-in-out 2s;
+
 }
 
 .profile-card--image {
@@ -586,7 +590,8 @@ body {
   transform: translate(-50%, 20%);
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.2s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+  transition: all 0.5s cubic-bezier(0.5, -0.5, 0.5, 1.5) ease-in-out;
+  transition: all 0.5s cubic-bezier(0.5, -0.5, 0.5, 1.5);
 }
 
 .profile-card--image--1 {
@@ -626,7 +631,7 @@ body {
   text-align: center;
   color: #55c57a;
   width: 100%;
-  transition: all 0.2s ease-in;
+  transition: all 1s ease-in-out;
 }
 
 @media only screen and (max-width: 75em) {
@@ -639,7 +644,7 @@ body {
   margin-bottom: 1rem;
   font-size: 3.2rem;
   text-transform: uppercase;
-  transition: all 0.2s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+  transition: width 0.5s cubic-bezier(0.5, -0.5, 0.5, 1.5);
 }
 
 @media only screen and (max-width: 75em) {
@@ -650,7 +655,6 @@ body {
 
 .profile-card--info .info {
   text-transform: uppercase;
-  transition: all 0.1s ease-in;
   font-size: 1.5rem;
 }
 
@@ -706,8 +710,9 @@ body {
 }
 
 .profile-card:hover .profile-card--image {
-  transform: translate(-50%, -5%) scale(1.1);
+  transform: translate(-50%, -25%) scale(1.1);
   filter: grayscale(0%);
+  transition: all 1s cubic-bezier(0.5, -0.5, 0.5, 1.5);
 }
 
 @media only screen and (max-width: 75em) {
@@ -1028,7 +1033,8 @@ img {
     height: 8rem;
     width: 10rem;
   }
-  .header .logo_box_image{
+
+  .header .logo_box_image {
     width: auto;
     height: auto;
   }
