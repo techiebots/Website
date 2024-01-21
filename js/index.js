@@ -222,3 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //Elastic.easeOut.config(1, 0.3)
 // }
 
+// const 
+
+$(".navigation__link").click(function () {
+    $("#navi-toggle").prop("checked", false);
+});
