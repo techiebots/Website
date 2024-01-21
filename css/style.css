@@ -1528,6 +1528,10 @@ div.footer_info {
 
   }
 
+  .footer_info_mail{
+    position: static !important;
+  }
+
   .footer_container1>.super_footer_info {
     flex-direction: column;
     /* padding-left: 2.8em;
@@ -2082,7 +2086,7 @@ div.footer_info {
   .footer {}
 }
 
-/* .footer_info_mail {
+.footer_info_mail {
   position: relative;
   right: 1rem
-} */
+}
