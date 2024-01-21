@@ -2010,8 +2010,8 @@ footer_nav_buttons div.Clubs a {
 
 @media only screen and (max-width: 37.5em) {
   .section-clubs {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
   }
 }
 
@@ -2056,3 +2056,4 @@ footer_nav_buttons div.Clubs a {
   text-decoration: none;
   cursor: pointer !important;
 }
+
