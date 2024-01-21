@@ -1474,12 +1474,6 @@ div.footer_info {
   border-radius: 3px;
 }
 
-footer_nav_buttons div.Clubs a {
-  transition: all 1s ease-in-out;
-  padding: 5px 10px 5px 10px;
-  border-radius: 3px;
-}
-
 .footer_nav_buttons div.Clubs a:hover {
   color: #ffffff;
   background-image: linear-gradient(to right bottom, rgb(234, 75, 54), rgb(254, 136, 0)) !important;
@@ -1502,15 +1496,42 @@ footer_nav_buttons div.Clubs a {
 }
 
 @media only screen and (max-width: 805px) {
+  .footer {
+    margin-top: 14rem;
+
+  }
+
   .footer>.footer_container1 {
     flex-direction: column;
     align-items: center;
   }
 
+
+  .footer_logo_container {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .footer_logo_container div {
+    text-align: center;
+    width: 100vw;
+    margin-top: 1rem;
+  }
+
+  .footer_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    /* margin-top: 1rem; */
+
+  }
+
   .footer_container1>.super_footer_info {
     flex-direction: column;
-    padding-left: 2.8em;
-    margin-left: 2.8em;
+    /* padding-left: 2.8em;
+    margin-left: 2.8em; */
   }
 
   .footer_nav>.footer_nav_buttons {
@@ -1530,7 +1551,7 @@ footer_nav_buttons div.Clubs a {
 
 .footer__logo-box {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -2010,8 +2031,8 @@ footer_nav_buttons div.Clubs a {
 
 @media only screen and (max-width: 37.5em) {
   .section-clubs {
-      margin-top: 0rem;
-      margin-bottom: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -2057,3 +2078,11 @@ footer_nav_buttons div.Clubs a {
   cursor: pointer !important;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .footer {}
+}
+
+/* .footer_info_mail {
+  position: relative;
+  right: 1rem
+} */
