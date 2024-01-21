@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     $(".preloader").hide();
-    particlesJS.load('particles-js', 'particles.json', function() {
+    particlesJS.load('particles-js', 'particles.json', function () {
         console.log('callback - particles.js config loaded');
     });
 
@@ -66,19 +66,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const controller = new ScrollMagic.Controller();
     //CODE FOR HEADING
     // ANIMATED HEADING
-    $(".box").each(function() {
-            var tl = new TimelineMax();
-            tl.from($(this), 0.8, { width: "0%", ease: Power4.easeInOut });
-            tl.from($(this).children(".box--back-animate"), 0.5, { opacity: 0, x: 50, ease: Power4.easeInOut }, "0.5");
+    $(".box").each(function () {
+        var tl = new TimelineMax();
+        tl.from($(this), 0.8, { width: "0%", ease: Power4.easeInOut });
+        tl.from($(this).children(".box--back-animate"), 0.5, { opacity: 0, x: 50, ease: Power4.easeInOut }, "0.5");
 
-            const scene = new ScrollMagic.Scene({
-                    triggerElement: this,
-                    reverse: false
-                })
-                .setTween(tl)
-                .addTo(controller);
+        const scene = new ScrollMagic.Scene({
+            triggerElement: this,
+            reverse: false
         })
-        //-------------------------------------------------------------------------------------------------------------------------------------------------
+            .setTween(tl)
+            .addTo(controller);
+    })
+    //-------------------------------------------------------------------------------------------------------------------------------------------------
 
     //CODE FOR ABOUT SECTION----------------------------------------------------------------------------------------------------------------------------
     var t2 = new TimelineMax();
@@ -130,10 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     let scene2 = new ScrollMagic.Scene({
-            triggerElement: '.section-events',
-            duration: '150%',
-            triggerHook: 'onLeave'
-        })
+        triggerElement: '.section-events',
+        duration: '150%',
+        triggerHook: 'onLeave'
+    })
         .setTween(timeline)
         .setPin('.section-events')
         .addTo(controller);
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reverse: false
     }).setTween(t6).addTo(controller);
 
-    $(".navigation__link").click(function() {
+    $(".navigation__link").click(function () {
         $("#navi-toggle").prop("checked", false);
     });
 })
@@ -221,3 +221,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Elastic.easeOut.config(1, 0.3)
 // }
+
