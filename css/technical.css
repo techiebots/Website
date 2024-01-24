@@ -61,3 +61,7 @@
     font-size: 1rem;
     /* text-align: justify; */
 }
+
+.article-card-header{
+    cursor: pointer;
+}
